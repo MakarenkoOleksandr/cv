@@ -1,0 +1,124 @@
+@use "../media/media-mixins" as *;
+
+.aside {
+    background-color: #66b2ff;
+    padding: 20px;
+    @include md-min {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        animation: asideIn 1s;
+        height: 100vh;
+        flex-direction: column;
+    }
+    @include md {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "summary about contacts";
+        column-gap: 20px;
+    }
+    &__photo img {
+        grid-area: photo; 
+        opacity: 0.95;
+        border-radius: 30px;
+        animation: headerAndMenuIn 1s;
+        @include md-min {
+            height: 35vh;
+        }
+        @include md {
+            animation: asideIn 1s;
+            height: 15vh;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: contacts;
+        animation: headerAndMenuIn 1s;
+        &-wrap {
+            display: flex;
+            padding: 10px;
+            gap: 20px;
+            @include sm {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    &__contacts div a svg{
+        @include md-min {
+            min-width: 30px;
+            min-height: 30px;
+        }
+
+        @include md {
+            max-width: 20px;
+            max-height: 20px;
+        }
+    }
+    &__contacts div a svg:hover{
+        transition: 0.7s;
+        color:black !important;
+    }
+    &__summary{
+        animation: headerAndMenuIn 1s;
+        grid-area: summary;
+    }
+    &__summary h2 {
+        text-align: center;
+    }
+    &__summary a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        @include md-min {
+            font-size: 0.8em
+        }
+        @include md {
+            font-size: 0.5em;
+        }
+    }
+    &__summary a:hover{
+        transition: 0.6s;
+        color: black;
+    }
+    &__about {
+        animation: headerAndMenuIn 1s;
+        grid-area: about;
+    }
+    &__about h2 {
+        text-align: center;
+    }
+    &__about p {
+        @include sm {
+            font-size: 0.3em;
+        }
+    }
+}
+
+.aside p {
+    @include md-min {
+        font-size: 0.8em;
+    }
+
+    @include md {
+        font-size: 0.5em;
+    }
+}
+
+.aside h2 {
+    font-weight: 600;
+    @include md-min {
+        font-size: 0.8em;
+    }
+
+    @include md {
+        font-size: 0.5em;
+    }
+}

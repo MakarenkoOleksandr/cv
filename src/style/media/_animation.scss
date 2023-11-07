@@ -1,0 +1,17 @@
+@keyframes headerAndMenuIn {
+    from {
+        transform: translateX(-200%)
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes asideIn {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
