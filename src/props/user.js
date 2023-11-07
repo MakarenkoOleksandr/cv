@@ -72,6 +72,13 @@ const user = {
       app checking more that 200 tokens balance at my wallet I am more that
       happy with this result",
     </a>,
+    <a
+      href="https://makarenkooleksandr.github.io/cv/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      This cv
+    </a>,
   ],
   Contacts: [
     <a href="https://t.me/Sm911" target="_blank" rel="noopener noreferrer">
