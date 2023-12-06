@@ -79,6 +79,22 @@ const user = {
     >
       This cv
     </a>,
+    <a
+      href="https://github.com/MakarenkoOleksandr/green-area"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      My first experience with creatin Telegram Bot.
+    </a>,
+    <a
+      href="https://github.com/MakarenkoOleksandr/mark-map"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Freelance project. Client required update shop`s plan with current
+      companies. This project not yet released that`s why i provided only JS
+      file with code.
+    </a>,
   ],
   Contacts: [
     <a href="https://t.me/Sm911" target="_blank" rel="noopener noreferrer">
