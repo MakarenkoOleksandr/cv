@@ -28,13 +28,13 @@ const user = {
     "SSAS",
     "Bootstrap",
     "JavaScript",
-    "TypeScript",
     "Python",
-    "GitHub",
     "Photoshop",
-    "CorelDraw",
+    "Adobe Illustrator",
+    "Git",
+    "MongoDB",
   ],
-  Frameworks: ["React", "Redux", "JQuery", "NodeJS"],
+  Frameworks: ["React", "Express", "NodeJS"],
   Languages: ["English – B2", "Ukrainian – Native", "Russian – Native"],
   Projects: [
     <a
