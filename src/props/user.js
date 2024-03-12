@@ -87,13 +87,19 @@ const user = {
       My first experience with creatin Telegram Bot.
     </a>,
     <a
-      href="https://github.com/MakarenkoOleksandr/mark-map"
+      href="https://mark-lviv.com.ua/uk/shema_tts/?activeFloor=1"
       target="_blank"
       rel="noopener noreferrer"
     >
       Freelance project. Client required update shop`s plan with current
-      companies. This project not yet released that`s why i provided only JS
-      file with code.
+      companies. In this project I had to use some PHP and JS code. Also a bit to update MySQL DB.
+    </a>,
+    <a
+      href="https://lemon-gorilla-slip.cyclic.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      First full stack project. I used React, Express, Mongo and Cyclic for deployment. 
     </a>,
   ],
   Contacts: [
