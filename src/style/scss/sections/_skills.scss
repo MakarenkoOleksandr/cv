@@ -1,0 +1,52 @@
+@use "../media/" as *;
+
+.skills {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    animation: opacity 2s;
+  }
+  &__skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 20px;
+  }
+  &__name {
+    font-size: 2em;
+    align-self: center; 
+    font-style: italic;
+    padding-top: 20px;
+    @include sm {
+      font-size: 1.5em;
+    }
+  }
+  &__item {
+    font-size: 2em;
+    align-self: center;    
+    @include sm {
+      font-size: 1.5em;
+    }
+  }
+  &__certificates{
+    display: grid;
+    grid-template-areas: "cert link";
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+  &__img {
+    height: 40px;
+  }
+}
+
+.filled {
+  animation: fillCheck 2s forwards;
+}
+
+.cert {
+  text-align: left;
+}
+

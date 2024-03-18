@@ -1,3 +1,3 @@
-const btns = ["Skills", "Frameworks", "Languages", "Projects"];
+const btns = ["Home", "About", "Skills", "Projects", "Contacts"];
 
 export default btns;

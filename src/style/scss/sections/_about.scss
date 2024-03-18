@@ -1,0 +1,19 @@
+@use "../media/" as *;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  animation: opacity 2s;
+  @include sm {
+    font-size: 1.5em;
+  }
+
+&__name,&__content {
+  padding-bottom: 20px;
+}
+&__name {
+  font-weight: 600;
+  font-style: italic;
+}
+}

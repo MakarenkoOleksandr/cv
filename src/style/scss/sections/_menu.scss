@@ -1,0 +1,38 @@
+@use "../media/" as *;
+
+.menu {
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+  animation: headerAndMenuIn 1s;
+
+  @include sm-xs {
+    font-size: 0.7em;
+  }
+  @include sm {
+    gap: 20px;
+    font-size: 0.6em;
+  }
+  &__action {
+    padding: 0.5em 1em;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: $light-black;
+    border: 2px solid $light-green;
+    color: $light-green;
+    &.active, &:hover {
+      transform: scale(1.2);
+      color: $light-black;
+      background-color: $light-green;
+      transition: 0.3s;
+    }
+  }
+}
