@@ -1,0 +1,32 @@
+@use "../media/" as *;
+
+.contacts {
+  height: 100vh;
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 0.5fr max-content;
+  grid-template-areas: "photo contact";
+  justify-items: center;
+    align-items: center;
+    justify-content: center;
+  &__photo {
+    width: 50%;
+    grid-area: photo;
+    border-radius: 30px;
+    margin-right: 50px;
+  }
+  &__wrap {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+  }
+  &__link {
+    padding: 2em;
+    &:hover {
+      transform: scale(1.4);
+     
+      transition: 0.3s;
+    }
+  }
+}

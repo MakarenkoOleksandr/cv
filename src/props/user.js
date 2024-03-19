@@ -19,6 +19,7 @@ import markMob from "../img/mark-mob.svg";
 import markDesk from "../img/mark-desk.svg";
 import webAppDesk from "../img/webapp-desk.svg";
 import webAppMob from "../img/webapp-mob.svg";
+import { faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
 
 const user = {
   Summary: {
@@ -26,11 +27,11 @@ const user = {
     Cert: [
       {
         Link: "https://certificate.ithillel.ua/view/60742632",
-        LinkInfo: "Front - end HTML/CSS",
+        LinkInfo: "Front-end HTML/CSS",
       },
       {
         Link: "https://certificate.ithillel.ua/view/17167089",
-        LinkInfo: "Frond-end JS",
+        LinkInfo: "Front-end JS",
       },
       {
         Link: "https://barcelonacodeschool.com/files/certs/certificate_oleksandr_makarenko.pdf",
@@ -51,7 +52,6 @@ const user = {
     "Express",
     "NodeJS",
     "Python",
-
     "Adb Illustrator",
     "Git",
   ],
@@ -114,32 +114,64 @@ const user = {
         "First full stack project. I used Cyclic service for deployment.",
       tech: "Tech: React/Express/Mongo",
     },
+    {
+      imgMobileSrc: webAppMob,
+      linkCode: "https://github.com/MakarenkoOleksandr/native_app/settings",
+      description: "First React Native project.",
+      tech: "Tech: React Native/Express/Mongo",
+    },
   ],
-  Contacts: [
-    <a href="https://t.me/Sm911" target="_blank" rel="noopener noreferrer">
-      <FontAwesomeIcon icon={faTelegram} style={{ color: "white" }} />
-    </a>,
-    <a
-      href="https://wa.me/+380961550556"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FontAwesomeIcon icon={faSquareWhatsapp} style={{ color: "white" }} />
-    </a>,
-    <a
-      href="https://www.linkedin.com/in/oleksandr-makarenko-8a15b8245/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FontAwesomeIcon icon={faLinkedin} style={{ color: "white" }} />
-    </a>,
-    <a
-      href="mailto:majop11111@gmail.com"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FontAwesomeIcon icon={faEnvelope} style={{ color: "white" }} />
-    </a>,
-  ],
+  Contacts: {
+    mobile: {
+      link: "tel:+1234567890",
+      icon: (
+        <FontAwesomeIcon
+          icon={faPhoneFlip}
+          style={{ color: "#B0FC83" }}
+          size="2xl"
+        />
+      ),
+    },
+    mail: {
+      link: "mailto:majop11111@gmail.com",
+      icon: (
+        <FontAwesomeIcon
+          icon={faEnvelope}
+          style={{ color: "#B0FC83" }}
+          size="2xl"
+        />
+      ),
+    },
+    tg: {
+      link: "https://t.me/Sm911",
+      icon: (
+        <FontAwesomeIcon
+          icon={faTelegram}
+          style={{ color: "#B0FC83" }}
+          size="2xl"
+        />
+      ),
+    },
+    watssup: {
+      link: "https://wa.me/+34604469813",
+      icon: (
+        <FontAwesomeIcon
+          icon={faSquareWhatsapp}
+          style={{ color: "#B0FC83" }}
+          size="2xl"
+        />
+      ),
+    },
+    in: {
+      link: "https://www.linkedin.com/in/oleksandr-makarenko-8a15b8245/",
+      icon: (
+        <FontAwesomeIcon
+          icon={faLinkedin}
+          style={{ color: "#B0FC83" }}
+          size="2xl"
+        />
+      ),
+    },
+  },
 };
 export default user;

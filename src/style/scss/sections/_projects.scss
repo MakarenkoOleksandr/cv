@@ -24,9 +24,22 @@
       row-gap: 20px;
       align-items: stretch;
     }
+    &-onescreen {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "mob content";
+      justify-items: center;
+      @include sm {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-evenly;
+      }
+    }
   }
   &__img {
     width: 100%;
+    grid-area: img;
   }
   &__content {
     padding-left: 20px;    
@@ -70,6 +83,19 @@
   grid-area: mob;
 }
 
+.only-mob {
+  max-width: 35%; 
+  align-self: center;
+}
+
+.only-desk {
+  grid-area: mob;
+  max-width: 85%;
+}
+
+.slick-slider {
+  animation: headerAndMenuIn 1s;
+}
 .slick-dots li button:before {
   font-size: 20px !important;
   color: $light-green !important;
@@ -86,4 +112,8 @@
   @include sm {
     bottom: 6em !important;
   }
+}
+
+button {
+  display: none;
 }

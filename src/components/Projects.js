@@ -6,17 +6,27 @@ import "slick-carousel/slick/slick-theme.css";
 import user from "../props/user";
 
 const ProjectSlide = ({ project }) => (
-  <div className={"project__item"}>
+  <div
+    className={`${
+      !project.imgMobileSrc || !project.imgDesktopSrc
+        ? "project__item project__item-onescreen"
+        : "project__item"
+    }`}
+  >
     {project.imgDesktopSrc ? (
       <img
-        className="project__img desk"
+        className={`${
+          !project.imgMobileSrc ? "project__img only-desk" : "project__img desk"
+        }`}
         src={project.imgDesktopSrc}
         alt="desktop"
       />
     ) : null}
     {project.imgMobileSrc ? (
       <img
-        className="project__img mob"
+        className={`${
+          !project.imgDesktopSrc ? "project__ img only-mob" : "project__img mob"
+        }`}
         src={project.imgMobileSrc}
         alt="mobile"
       />
@@ -28,7 +38,12 @@ const ProjectSlide = ({ project }) => (
       <p className="project__desc">{project.tech}</p>
       <p className="project__head">Links:</p>
       <div className="project__actions">
-        <a className="project__action" href={project.linkCode} target="_blank">
+        <a
+          className="project__action"
+          href={project.linkCode}
+          target="_blank"
+          rel="noreferrer"
+        >
           <FontAwesomeIcon
             icon={faLink}
             style={{ color: "#B0FC83", paddingRight: "30px" }}
@@ -40,6 +55,7 @@ const ProjectSlide = ({ project }) => (
             className="project__action"
             href={project.linkLive}
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon
               icon={faLink}
