@@ -30,7 +30,13 @@ const Skills = () => {
               <p className="cert filled" key={idx}>
                 - {el.LinkInfo}
               </p>
-              <a className="link" key={idx} href={el.Link}>
+              <a
+                className="link"
+                key={idx}
+                href={el.Link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faLink} style={{ color: "#B0FC83" }} />
               </a>
             </>

@@ -10,8 +10,6 @@ const Bg = () => {
       loop
       muted
       playsInline
-      controls="true"
-      conditional="true"
     >
       <source src={bg} type="video/mp4"></source>
     </video>

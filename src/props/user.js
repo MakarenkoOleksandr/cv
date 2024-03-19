@@ -40,7 +40,7 @@ const user = {
     ],
   },
   About:
-    "I'm rather sociable and outgoing. Coding becomes as a part of my life couse i wanted from children time work in this area. This one gives me a very big pleasuse when i can see a good result of my work. At free of this time i like to play tennis or work with wood. Fast-learner and critical-thinker with a flexible approach to life.",
+    "I'm rather sociable and outgoing. Becoming a coder was my childhood dream which is now a reality. I find a pleasure in seeing the results of my work. At my free time I enjoy playing tennis and woodworking. I am a fast-learner and critical-thinker with a flexible approach to life.",
   Skills: [
     "HTML",
     "CSS",
@@ -57,45 +57,6 @@ const user = {
   ],
   Languages: ["English – B2", "Ukrainian – Native", "Russian – Native"],
   Projects: [
-    {
-      imgDesktopSrc: lokaliseDesk,
-      imgMobileSrc: lokaliseMob,
-      linkLive: "https://makarenkooleksandr.github.io/Lokalise/",
-      linkCode: "https://github.com/MakarenkoOleksandr/Lokalise",
-      description:
-        "This is my first clone project. Please have be noticed that links are not settuped. ",
-      tech: "HTML/SCSS/JS.",
-    },
-    {
-      imgDesktopSrc: finalDesk,
-      imgMobileSrc: finalMob,
-      linkLive: "https://makarenkooleksandr.github.io/final/",
-      linkCode: "https://github.com/MakarenkoOleksandr/final",
-      description: "This is final clone project at HTML/CSS course",
-      tech: "HTML/SCSS/JS/Gulp.",
-    },
-    {
-      imgDesktopSrc: inchDesk,
-      linkCode: "https://github.com/MakarenkoOleksandr/1inch",
-      description:
-        "The most big problem I have at option “Check balance”. Response of balance was around 3-4 min. To fix this instead of asyncio library I had to use aiohttp. After one I received response maximum in 1.5 min",
-      tech: "Python/Web3/aiohttp",
-    },
-    {
-      imgDesktopSrc: cvDesk,
-      imgMobileSrc: cvMob,
-      linkLive: "https://makarenkooleksandr.github.io/cv/",
-      linkCode: "https://github.com/MakarenkoOleksandr/cv",
-      description: "This cv",
-      tech: "SCSS/React/Gulp/GH Pages",
-    },
-    {
-      imgDesktopSrc: tgDesk,
-      imgMobileSrc: tgMob,
-      linkCode: "https://github.com/MakarenkoOleksandr/green-area",
-      description: "My first experience with creatin Telegram Bot.",
-      tech: "JS/Telegraf",
-    },
     {
       imgDesktopSrc: markDesk,
       imgMobileSrc: markMob,
@@ -119,6 +80,45 @@ const user = {
       linkCode: "https://github.com/MakarenkoOleksandr/native_app/settings",
       description: "First React Native project.",
       tech: "Tech: React Native/Express/Mongo",
+    },
+    {
+      imgDesktopSrc: lokaliseDesk,
+      imgMobileSrc: lokaliseMob,
+      linkLive: "https://makarenkooleksandr.github.io/Lokalise/",
+      linkCode: "https://github.com/MakarenkoOleksandr/Lokalise",
+      description:
+        "This is my first clone project. Please keep in mind that the links are not added on purpose.",
+      tech: "HTML/SCSS/JS.",
+    },
+    {
+      imgDesktopSrc: finalDesk,
+      imgMobileSrc: finalMob,
+      linkLive: "https://makarenkooleksandr.github.io/final/",
+      linkCode: "https://github.com/MakarenkoOleksandr/final",
+      description: "This is final clone project at HTML/CSS course",
+      tech: "HTML/SCSS/JS/Gulp.",
+    },
+    {
+      imgDesktopSrc: inchDesk,
+      linkCode: "https://github.com/MakarenkoOleksandr/1inch",
+      description:
+        "The biggest problem I've had in this project was `Check balance` option, with response time of balance being around 3-4 min. To fix this instead of asyncio library I used aiohttp, which reduced the response time to 1.5 min maximum.",
+      tech: "Python/Web3/aiohttp",
+    },
+    {
+      imgDesktopSrc: cvDesk,
+      imgMobileSrc: cvMob,
+      linkLive: "https://makarenkooleksandr.github.io/cv/",
+      linkCode: "https://github.com/MakarenkoOleksandr/cv",
+      description: "This cv",
+      tech: "SCSS/React/Gulp/GH Pages",
+    },
+    {
+      imgDesktopSrc: tgDesk,
+      imgMobileSrc: tgMob,
+      linkCode: "https://github.com/MakarenkoOleksandr/green-area",
+      description: "My first experience with creating Telegram Bot.",
+      tech: "JS/Telegraf",
     },
   ],
   Contacts: {
