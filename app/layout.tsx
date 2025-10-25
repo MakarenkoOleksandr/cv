@@ -37,6 +37,7 @@ export default function RootLayout({
           showSpinner={true}
         />
         <Bg />
+        <div className="fixed inset-0 bg-black opacity-70" />
         <Header />
         <Main>{children}</Main>
       </body>
