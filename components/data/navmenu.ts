@@ -5,5 +5,6 @@ export const navmenu = [
   { link: ROUTES.ABOUT, label: "About" },
   { link: ROUTES.SKILLS, label: "Skills" },
   { link: ROUTES.PROJECTS, label: "Projects" },
+  { link: ROUTES.EXP, label: "Experience" },
   { link: ROUTES.CONTACTS, label: "Contacts" },
 ];

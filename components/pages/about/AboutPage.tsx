@@ -1,6 +1,7 @@
 "use client";
 
 import { aboutText, languages } from "@/components/data/about";
+import classNames from "classnames";
 import { motion } from "motion/react";
 import React from "react";
 
@@ -13,7 +14,7 @@ const AboutPage = () => {
           initial={{ x: "-150%", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: idx * 0.7 }}
-          className="text-3xl text-center pb-5"
+          className={classNames("text-3xl text-center", { "pb-5": idx <= 1 })}
         >
           {el}
         </motion.p>

@@ -4,6 +4,7 @@ export const aboutText = [
 ];
 export const languages = [
   "English – B2",
+  "Spanish – A2",
   "Ukrainian – Native",
   "Russian – Native",
 ];

@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/autoplay";
+@import "swiper/css/scrollbar";
 
 :root {
   --main-color: #b0fc83;
@@ -12,6 +16,7 @@
   --color-secondary: var(--secondary-color);
   --font-sans: var(--font-geist-sans);
   --font-primary: var(--font-primary);
+  --shadow-image: 0 0 10px rgba(0, 255, 100, 0.5);
 }
 
 body {
@@ -19,3 +24,23 @@ body {
   font-family: var(--font-primary), Arial, Helvetica, sans-serif;
 }
 /* LI3GX2nWGe0mKzwQ3X-kBRbWKlaWaTIySYsqAYWu */
+
+a,
+a:hover {
+  transition: all 0.4s;
+}
+a:hover {
+  color: var(--color-secondary);
+}
+
+.swiper-pagination-bullet {
+  background: var(--main-color);
+  width: 15px;
+  height: 15px;
+  transition: all 0.4s;
+}
+
+.swiper-pagination-bullet:hover {
+  opacity: 1;
+  transition: all 0.4s;
+}
