@@ -5,9 +5,7 @@ interface Props {
 }
 
 const Main = ({ children }: Props) => {
-  return (
-    <main className="relative z-10 mt-[66px] h-[92vh] px-10">{children}</main>
-  );
+  return <main className="relative z-10 mt-[120px] px-10">{children}</main>;
 };
 
 export default Main;

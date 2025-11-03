@@ -1,6 +1,6 @@
 export const aboutText = [
-  "Hello! My name is Alex and I`m from Ukraine.",
-  "I'm rather sociable and outgoing. Becoming a coder was my childhood dream which is now a reality. I find a pleasure in seeing the results of my work. At my free time I enjoy playing tennis and woodworking. I am a fast-learner and critical-thinker with a flexible approach to life.",
+  "I specialize in building scalable, accessible, and high-performing web applications using React, TypeScript, and modern front-end architecture. I care about clean code, meaningful design systems, and a smooth developer experience.",
+  "I enjoy working closely with designers and backend teams to bring products to life — from polished UI to optimized delivery. Outside of coding, I recharge with tennis or woodworking — both teach patience and precision that reflect in how I build things.",
 ];
 export const languages = [
   "English – B2",

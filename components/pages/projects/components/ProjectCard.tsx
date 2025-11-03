@@ -13,14 +13,15 @@ const ProjectCard = ({ project }: Props) => {
   return (
     <div
       className={classNames("grid py-10 gap-10 items-center", {
-        "grid-cols-[1fr_0.4fr_0.5fr]": project?.imgDesktopSrc,
+        "xl:grid-cols-[0.6fr_0.2fr_0.5fr] grid-cols-[1fr_0.3fr]":
+          project?.imgDesktopSrc,
         "grid-cols-2 justify-items-center": !project?.imgDesktopSrc,
       })}
     >
       {project?.imgDesktopSrc && (
-        <div className="h-full flex items-start">
+        <div className="flex items-start">
           <Image
-            className="w-full "
+            className="w-full"
             src={project?.imgDesktopSrc}
             alt="desktop"
             width={800}
@@ -29,9 +30,9 @@ const ProjectCard = ({ project }: Props) => {
         </div>
       )}
       {project?.imgMobileSrc && (
-        <div className="h-full flex items-start">
+        <div className="flex items-start">
           <Image
-            className="h-full"
+            className="h-full w-full"
             src={project?.imgMobileSrc}
             alt="mobile"
             width={250}
@@ -40,15 +41,12 @@ const ProjectCard = ({ project }: Props) => {
         </div>
       )}
 
-      <div className="h-full flex flex-col gap-5">
+      <div className="h-full w-full items-center flex flex-col gap-5 xl:col-auto col-span-full">
         <div>
-          <h2 className="text-2xl pb-2 italic">Description:</h2>
-          <p className="text-lg">{project?.description}</p>
+          <h2 className="text-xl md:text-2xl pb-2 italic">Description:</h2>
+          <p className="text-base md:text-lg">{project?.description}</p>
         </div>
-        <div>
-          <h2 className="text-2xl pb-2 italic">Technologies:</h2>
-          <p className="text-lg">{project?.tech}</p>
-        </div>
+
         {project?.linkLive && (
           <Link
             href={project?.linkLive || "#"}
@@ -59,6 +57,16 @@ const ProjectCard = ({ project }: Props) => {
             <p>Visit web</p>
           </Link>
         )}
+        <div className="flex flex-wrap gap-5 items-center">
+          {project?.tech?.map((el, idx) => (
+            <div
+              className="text-sm md:text-base border px-2 py-0.5 rounded-md flex items-center bg-main text-black"
+              key={idx}
+            >
+              {el}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

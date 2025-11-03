@@ -11,6 +11,7 @@ export const certificates = [
         color="currentColor"
       />
     ),
+    skills: ["HTML", "CSS", "SASS/SCCS", "JS", "GULP"],
   },
   {
     Link: "https://certificate.ithillel.ua/view/17167089",
@@ -22,6 +23,7 @@ export const certificates = [
         color="currentColor"
       />
     ),
+    skills: ["JS", "Typescript", "React", "Redux"],
   },
   {
     Link: "https://barcelonacodeschool.com/files/certs/certificate_oleksandr_makarenko.pdf",
@@ -33,23 +35,19 @@ export const certificates = [
         color="currentColor"
       />
     ),
+    skills: [
+      "HTML",
+      "CSS",
+      "JS",
+      "React",
+      "React Native",
+      "Mongo DB",
+      "RESTfull APIs",
+    ],
   },
 ];
 
 export const commercial = [
-  {
-    label: "Mark",
-    desc: "Partial time",
-    duration: "March 2022 - Present time",
-    icon: (
-      <FaLink
-        className="cursor-pointer transition-all hover:scale-125"
-        size={16}
-        color="currentColor"
-      />
-    ),
-    link: "https://mark-lviv.com.ua/",
-  },
   {
     label: "Bluebox",
     desc: "Full time",
@@ -62,5 +60,20 @@ export const commercial = [
       />
     ),
     link: "https://www.blueboxonline.com/",
+    position: "Front-End developer",
+  },
+  {
+    label: "Mark",
+    desc: "Partial time",
+    duration: "March 2022 - Present time",
+    icon: (
+      <FaLink
+        className="cursor-pointer transition-all hover:scale-125"
+        size={16}
+        color="currentColor"
+      />
+    ),
+    link: "https://mark-lviv.com.ua/",
+    position: "Front-End Developer (Website Maintenance & Support)",
   },
 ];

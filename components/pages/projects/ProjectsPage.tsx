@@ -42,14 +42,14 @@ const ProjectsPage = () => {
 
         <div
           ref={prevRef}
-          className="absolute top-1/2 left-0 z-10 cursor-pointer transition-all hover:scale-110"
+          className="absolute top-5 xl:top-1/2 left-0 z-10 cursor-pointer transition-all hover:scale-110"
           onClick={() => swiperRef.current?.slidePrev()}
         >
           <FiArrowLeftCircle size={50} color="currentColor" />
         </div>
         <div
           ref={nextRef}
-          className="absolute top-1/2 right-0 z-10 cursor-pointer transition-all hover:scale-110"
+          className="absolute top-5 xl:top-1/2 right-0 z-10 cursor-pointer transition-all hover:scale-110"
           onClick={() => swiperRef.current?.slideNext()}
         >
           <FiArrowRightCircle size={50} color="currentColor" />

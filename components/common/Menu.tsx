@@ -10,7 +10,7 @@ const Menu = () => {
   const [show, setShow] = useState<boolean>(false);
   return (
     <>
-      <nav className="flex justify-center gap-7">
+      <nav className="flex flex-wrap justify-center gap-7 text-sm md:text-lg">
         {navmenu?.map((el, idx) =>
           el.label === "Contacts" ? (
             <div key={idx} onClick={() => setShow(true)}>
