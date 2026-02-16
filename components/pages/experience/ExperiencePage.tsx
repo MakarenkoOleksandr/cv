@@ -46,7 +46,7 @@ export const ExperiencePage = () => {
               key={idx}
               className={classNames(
                 "flex flex-col gap-5 h-full justify-between",
-                { "border-b pb-5": idx !== 2 }
+                { "md:border-none border-b md:pb-0 pb-5": idx !== 2 },
               )}
             >
               <p>{el.LinkInfo}</p>

@@ -33,7 +33,7 @@ export const projects: ProjectProps[] = [
     imgMobileSrc: angMob,
     linkLive: "https://anoblegift.com",
     description:
-      "Developed from scratch — full front-end architecture, SSR setup, and REST integrations on Next.js. Implemented Stripe payments, Cloudflare Workers deployment, and adaptive UI with Tailwind CSS for a seamless charity auction experience.",
+      "Front-end engineer in a cross-functional team. Contributed to the Next.js architecture with SSR setup and REST integrations. Implemented Stripe payments, Cloudflare Workers deployment, and adaptive UI using Tailwind CSS to deliver a seamless charity auction experience.",
     tech: [
       "Next",
       "SSR",
@@ -50,7 +50,7 @@ export const projects: ProjectProps[] = [
     imgMobileSrc: tickedyMob,
     linkLive: "https://app.tickedy.com/motherwell",
     description:
-      "Built from scratch — complete ticketing platform for clubs and fans. Developed web client and admin panel on Next.js with SSR, RESTful APIs, and Stripe integration. Focused on smooth UX, responsive design, and secure ticket management workflows.",
+      "Front-end developer contributing to a full-scale ticketing platform for clubs and fans. Worked on the web client and admin panel using Next.js with SSR, RESTful APIs, and Stripe integration. Focused on UX improvements, responsive design, and secure ticket management workflows.",
     tech: [
       "Next",
       "SSR",
@@ -66,7 +66,7 @@ export const projects: ProjectProps[] = [
     imgMobileSrc: skyMob,
     linkLive: "https://skyglass-app-rebuild.pages.dev/",
     description:
-      "Led a full rebuild of the company’s streaming platform — migrating from legacy React to modern Next.js with SSR. Redesigned front-end architecture, improved performance, and rebuilt UI for a faster, cleaner, and more scalable product.",
+      "Led the front-end migration of a streaming platform from legacy React to modern Next.js with SSR. Redesigned architecture, improved performance, and rebuilt UI components to enhance scalability and maintainability.",
     tech: [
       "Next",
       "SSR",
@@ -87,13 +87,13 @@ export const projects: ProjectProps[] = [
   {
     imgMobileSrc: geoMob,
     description:
-      "Contributed to the React Native (Expo) app by improving media file handling, offline backups, and Mapbox-based geolocation features. Added support for file persistence, backend sync, and bug fixes to improve data reliability in offline mode.",
+      "Contributed to a React Native (Expo) application by improving media handling, offline backups, and Mapbox-based geolocation features. Enhanced file persistence, backend synchronization, and overall data reliability in offline mode.",
     tech: ["Expo", "React Native", "Mapbox SDK", "AsyncStorage", "RESTful API"],
   },
   {
     imgMobileSrc: ascendMob,
     description:
-      "Developed from scratch a React Native app for airline cabin service — enabling passengers to order meals, drinks, and duty-free items. Implemented real-time syncing, Stripe Terminal integration, and reactive data layer with WatermelonDB and RxJS.",
+      "Front-end developer contributing to a React Native application for airline cabin service. Implemented real-time syncing, Stripe Terminal integration, and a reactive data layer using WatermelonDB and RxJS to support onboard ordering workflows.",
     tech: [
       "React Native",
       "TypeScript",
