@@ -64,7 +64,7 @@ export const projects: ProjectProps[] = [
   {
     imgDesktopSrc: skyDesk,
     imgMobileSrc: skyMob,
-    linkLive: "https://skyglass-app-rebuild.pages.dev/",
+    linkLive: "https://www.skytoolkit.net/",
     description:
       "Led the front-end migration of a streaming platform from legacy React to modern Next.js with SSR. Redesigned architecture, improved performance, and rebuilt UI components to enhance scalability and maintainability.",
     tech: [
